@@ -62,12 +62,7 @@ void start(){
 
 }
 
-
-
-
-
-int main(){
-    struct ques{
+struct ques{
         char ques[200];
         char opt1[50];
         char opt2[50];
@@ -75,9 +70,10 @@ int main(){
         char opt4[50];
         char ans[50];
     };
-    
 
 
+
+int main(){
 
     return 0;
 }
