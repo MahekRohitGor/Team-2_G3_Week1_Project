@@ -33,10 +33,182 @@ void start(){
     int choice;
     printf("Enter choice: ");
     scanf("%d", &choice);
+    // struct ques q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,q11,q12,q13,q14,q15;
     switch (choice)
     {
     case 1:
-        printf("You have choosen Science !");
+        printf("You have choosen Science !\n");
+        printf("Here are your questions: \n");
+        int N=10, score, i;
+        score = 0;
+        for(i=0; i<N; i++){
+            int r = rand()%N;
+            if(r ==0){
+                printf("Q. Electric bulb filament is made of\n a. Copper      b. Aluminium \n c. Lead        d. Tungsten \n");
+                if(getchar()=='d' || 'D'){
+                    printf("Correct Answer !");
+                    score += 4;
+                }
+                else{
+                    printf("Wrong Answer!");
+                    score -= 1;
+                }
+            }
+            else if(r ==1){
+                printf("Q. Which of the following is a non metal that remains liquid at room temperature?\n a. Phosphorus   b. Bromine \n c. Chlorine     d. Helium \n");
+                if(getchar()=='b' || 'B'){
+                    printf("Correct Answer !");
+                    score += 4;
+                }
+                else{
+                    printf("Wrong Answer!");
+                    score -= 1;
+                }
+            }
+            else if(r ==2){
+                printf("Q. Chlorophyll is a naturally occuring chelate compound in which center metal atom is\na. Copper       b. Magnesium\nc. Iron         d. Calcium\n");
+                if(getchar()=='b' || 'B'){
+                    printf("Correct Answer !");
+                    score += 4;
+                }
+                else{
+                    printf("Wrong Answer!");
+                    score -= 1;
+                }
+            }
+            if(r ==3){
+                printf("Q.Brass gets discoloured in air because of the presence of which of the following gases in air?\n a. Oxygen      b. Hydrogen sulphide\n c. Carbon dioxide        d. Nitrogen\n");
+                if(getchar()=='b' || 'B'){
+                    printf("Correct Answer !");
+                    score += 4;
+                }
+                else{
+                    printf("Wrong Answer!");
+                    score -= 1;
+                }
+            }
+            if(r ==4){
+                printf("1. Electric bulb filament is made of\n a. Copper      b. Aluminium \n c. Lead        d. Tungsten \n");
+                if(getchar()=='d' || 'D'){
+                    printf("Correct Answer !");
+                    score += 4;
+                }
+                else{
+                    printf("Wrong Answer!");
+                    score -= 1;
+                }
+            }
+            if(r ==0){
+                printf("1. Electric bulb filament is made of\n a. Copper      b. Aluminium \n c. Lead        d. Tungsten \n");
+                if(getchar()=='d' || 'D'){
+                    printf("Correct Answer !");
+                    score += 4;
+                }
+                else{
+                    printf("Wrong Answer!");
+                    score -= 1;
+                }
+            }
+            if(r ==0){
+                printf("1. Electric bulb filament is made of\n a. Copper      b. Aluminium \n c. Lead        d. Tungsten \n");
+                if(getchar()=='d' || 'D'){
+                    printf("Correct Answer !");
+                    score += 4;
+                }
+                else{
+                    printf("Wrong Answer!");
+                    score -= 1;
+                }
+            }
+            if(r ==0){
+                printf("1. Electric bulb filament is made of\n a. Copper      b. Aluminium \n c. Lead        d. Tungsten \n");
+                if(getchar()=='d' || 'D'){
+                    printf("Correct Answer !");
+                    score += 4;
+                }
+                else{
+                    printf("Wrong Answer!");
+                    score -= 1;
+                }
+            }
+            if(r ==0){
+                printf("1. Electric bulb filament is made of\n a. Copper      b. Aluminium \n c. Lead        d. Tungsten \n");
+                if(getchar()=='d' || 'D'){
+                    printf("Correct Answer !");
+                    score += 4;
+                }
+                else{
+                    printf("Wrong Answer!");
+                    score -= 1;
+                }
+            }
+            if(r ==0){
+                printf("1. Electric bulb filament is made of\n a. Copper      b. Aluminium \n c. Lead        d. Tungsten \n");
+                if(getchar()=='d' || 'D'){
+                    printf("Correct Answer !");
+                    score += 4;
+                }
+                else{
+                    printf("Wrong Answer!");
+                    score -= 1;
+                }
+            }
+            if(r ==0){
+                printf("1. Electric bulb filament is made of\n a. Copper      b. Aluminium \n c. Lead        d. Tungsten \n");
+                if(getchar()=='d' || 'D'){
+                    printf("Correct Answer !");
+                    score += 4;
+                }
+                else{
+                    printf("Wrong Answer!");
+                    score -= 1;
+                }
+            }
+            if(r ==0){
+                printf("1. Electric bulb filament is made of\n a. Copper      b. Aluminium \n c. Lead        d. Tungsten \n");
+                if(getchar()=='d' || 'D'){
+                    printf("Correct Answer !");
+                    score += 4;
+                }
+                else{
+                    printf("Wrong Answer!");
+                    score -= 1;
+                }
+            }
+            if(r ==0){
+                printf("1. Electric bulb filament is made of\n a. Copper      b. Aluminium \n c. Lead        d. Tungsten \n");
+                if(getchar()=='d' || 'D'){
+                    printf("Correct Answer !");
+                    score += 4;
+                }
+                else{
+                    printf("Wrong Answer!");
+                    score -= 1;
+                }
+            }
+            if(r ==0){
+                printf("1. Electric bulb filament is made of\n a. Copper      b. Aluminium \n c. Lead        d. Tungsten \n");
+                if(getchar()=='d' || 'D'){
+                    printf("Correct Answer !");
+                    score += 4;
+                }
+                else{
+                    printf("Wrong Answer!");
+                    score -= 1;
+                }
+            }
+            if(r ==0){
+                printf("1. Electric bulb filament is made of\n a. Copper      b. Aluminium \n c. Lead        d. Tungsten \n");
+                if(getchar()=='d' || 'D'){
+                    printf("Correct Answer !");
+                    score += 4;
+                }
+                else{
+                    printf("Wrong Answer!");
+                    score -= 1;
+                }
+            }
+        }
         break;
     case 2:
         printf("You have choosen Maths !");
@@ -74,6 +246,6 @@ struct ques{
 
 
 int main(){
-
+    start();
     return 0;
 }
