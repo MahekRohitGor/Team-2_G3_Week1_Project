@@ -88,8 +88,8 @@ void start(){
                 }
             }
             if(r ==4){
-                printf("1. Electric bulb filament is made of\n a. Copper      b. Aluminium \n c. Lead        d. Tungsten \n");
-                if(getchar()=='d' || 'D'){
+                printf("Q. Which among the following Vitamin is added to the milk in some countries as it is lost during the process of Fat Removal (Skimming)?\n a. Vitamin A      b. Vitamin B \n c. Vitamin C        d. Vitamin D \n");
+                if(getchar()=='a' || 'A'){
                     printf("Correct Answer !");
                     score += 4;
                 }
@@ -98,9 +98,9 @@ void start(){
                     score -= 1;
                 }
             }
-            if(r ==0){
-                printf("1. Electric bulb filament is made of\n a. Copper      b. Aluminium \n c. Lead        d. Tungsten \n");
-                if(getchar()=='d' || 'D'){
+            if(r ==5){
+                printf("Q. Which of the following algae is used to make iodine?\n a.Macrocystis      b.  Surgassum \n c.Synechococcus       d. Anabina \n");
+                if(getchar()=='a' || 'A'){
                     printf("Correct Answer !");
                     score += 4;
                 }
@@ -109,9 +109,9 @@ void start(){
                     score -= 1;
                 }
             }
-            if(r ==0){
-                printf("1. Electric bulb filament is made of\n a. Copper      b. Aluminium \n c. Lead        d. Tungsten \n");
-                if(getchar()=='d' || 'D'){
+            if(r == 6){
+                printf("Q. What is another name for cyanobacteria?\n a.Blue-green algae      b. Protists \n c.Golden algae        d. Slime moulds\n");
+                if(getchar()=='a' || 'A'){
                     printf("Correct Answer !");
                     score += 4;
                 }
@@ -120,8 +120,8 @@ void start(){
                     score -= 1;
                 }
             }
-            if(r ==0){
-                printf("1. Electric bulb filament is made of\n a. Copper      b. Aluminium \n c. Lead        d. Tungsten \n");
+            if(r ==7){
+                printf("Q. Electric bulb filament is made of\n a. Copper      b. Aluminium \n c. Lead        d. Tungsten \n");
                 if(getchar()=='d' || 'D'){
                     printf("Correct Answer !");
                     score += 4;
