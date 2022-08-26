@@ -34,181 +34,191 @@ void start(){
     printf("Enter choice: ");
     scanf("%d", &choice);
     // struct ques q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,q11,q12,q13,q14,q15;
+    char ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans10, ans11, ans12, ans13, ans14, ans15;
     switch (choice)
     {
     case 1:
         printf("You have choosen Science !\n");
         printf("Here are your questions: \n");
-        int N=10, score, i;
+        int score;
         score = 0;
-        for(i=0; i<N; i++){
-            int r = rand()%N;
-            if(r ==0){
                 printf("Q. Electric bulb filament is made of\n a. Copper      b. Aluminium \n c. Lead        d. Tungsten \n");
-                if(getchar()=='d' || 'D'){
-                    printf("Correct Answer !");
+                scanf("%c", ans1);
+                if(ans1=='d' || 'D'){
+                    printf("Correct Answer !\n");
                     score += 4;
                 }
                 else{
-                    printf("Wrong Answer!");
+                    printf("Wrong Answer!\n");
                     score -= 1;
                 }
-            }
-            else if(r ==1){
                 printf("Q. Which of the following is a non metal that remains liquid at room temperature?\n a. Phosphorus   b. Bromine \n c. Chlorine     d. Helium \n");
-                if(getchar()=='b' || 'B'){
-                    printf("Correct Answer !");
+                scanf("%c", ans2);
+                if(ans2 =='b' || 'B'){
+                    printf("Correct Answer !\n");
                     score += 4;
                 }
                 else{
-                    printf("Wrong Answer!");
+                    printf("Wrong Answer!\n");
                     score -= 1;
                 }
-            }
-            else if(r ==2){
+            
                 printf("Q. Chlorophyll is a naturally occuring chelate compound in which center metal atom is\na. Copper       b. Magnesium\nc. Iron         d. Calcium\n");
-                if(getchar()=='b' || 'B'){
-                    printf("Correct Answer !");
+                scanf("%c", ans3);
+                if(ans3 =='b' || 'B'){
+                    printf("Correct Answer !\n");
                     score += 4;
                 }
                 else{
-                    printf("Wrong Answer!");
+                    printf("Wrong Answer!\n");
                     score -= 1;
                 }
-            }
-            if(r ==3){
+            
+            
                 printf("Q.Brass gets discoloured in air because of the presence of which of the following gases in air?\n a. Oxygen      b. Hydrogen sulphide\n c. Carbon dioxide        d. Nitrogen\n");
-                if(getchar()=='b' || 'B'){
-                    printf("Correct Answer !");
+                scanf("%c", ans4);
+                if(ans4=='b' || 'B'){
+                    printf("Correct Answer !\n");
                     score += 4;
                 }
                 else{
-                    printf("Wrong Answer!");
+                    printf("Wrong Answer!\n");
                     score -= 1;
                 }
-            }
-            if(r ==4){
+           
+           
                 printf("Q. Which among the following Vitamin is added to the milk in some countries as it is lost during the process of Fat Removal (Skimming)?\n a. Vitamin A      b. Vitamin B \n c. Vitamin C        d. Vitamin D \n");
-                if(getchar()=='a' || 'A'){
-                    printf("Correct Answer !");
+                scanf("%c", ans5);
+                if(ans5=='a' || 'A'){
+                    printf("Correct Answer !\n");
                     score += 4;
                 }
                 else{
-                    printf("Wrong Answer!");
+                    printf("Wrong Answer!\n");
                     score -= 1;
                 }
-            }
-            if(r ==5){
+            
+            
                 printf("Q. Which of the following algae is used to make iodine?\n a.Macrocystis      b.  Surgassum \n c.Synechococcus       d. Anabina \n");
-                if(getchar()=='a' || 'A'){
-                    printf("Correct Answer !");
+                scanf("%c", ans6);
+                if(ans6=='a' || 'A'){
+                    printf("Correct Answer !\n");
                     score += 4;
                 }
                 else{
-                    printf("Wrong Answer!");
+                    printf("Wrong Answer!\n");
                     score -= 1;
                 }
-            }
-            if(r == 6){
                 printf("Q. What is another name for cyanobacteria?\n a.Blue-green algae      b. Protists \n c.Golden algae        d. Slime moulds\n");
-                if(getchar()=='a' || 'A'){
-                    printf("Correct Answer !");
+                scanf("%c", ans7);
+                if(ans7=='a' || 'A'){
+                    printf("Correct Answer !\n");
                     score += 4;
                 }
                 else{
-                    printf("Wrong Answer!");
+                    printf("Wrong Answer!\n");
                     score -= 1;
                 }
-            }
-            if(r ==7){
-                printf("Q. Electric bulb filament is made of\n a. Copper      b. Aluminium \n c. Lead        d. Tungsten \n");
-                if(getchar()=='d' || 'D'){
-                    printf("Correct Answer !");
+            
+           
+                printf("Q. The Alkali metals are called good reducing agents. This implies that__:\n a.They easily capture electrons\n      b. They are not stable at room temperature \n c. They easily lose electrons\n        d. They don’t act with dilute acids\n");
+                scanf("%c", ans8);
+                if(ans8=='c' || 'C'){
+                    printf("Correct Answer !\n");
                     score += 4;
                 }
                 else{
-                    printf("Wrong Answer!");
+                    printf("Wrong Answer!\n");
                     score -= 1;
                 }
-            }
-            if(r ==0){
-                printf("1. Electric bulb filament is made of\n a. Copper      b. Aluminium \n c. Lead        d. Tungsten \n");
-                if(getchar()=='d' || 'D'){
-                    printf("Correct Answer !");
+           
+            
+                printf("Q. Plants growing on marshy areas are commonly called as _____?\n a. Oxylophytes      b.  Lithophytes \n c. Helophytes        d. Psilophytes \n");
+                scanf("%c", ans9);
+                if(ans9 =='c' || 'C'){
+                    printf("Correct Answer !\n");
                     score += 4;
                 }
                 else{
-                    printf("Wrong Answer!");
+                    printf("Wrong Answer!\n");
                     score -= 1;
                 }
-            }
-            if(r ==0){
-                printf("1. Electric bulb filament is made of\n a. Copper      b. Aluminium \n c. Lead        d. Tungsten \n");
-                if(getchar()=='d' || 'D'){
-                    printf("Correct Answer !");
+            
+            
+                printf("Q.A passenger in a moving bus is thrown forward when the bus suddenly stops. This is explained\n a. By Newton's first Law      b.  By Newton's Second Law  \n c. By Newton'third Law        d. By the principle of conservation of momentum \n");
+                scanf("%c", ans10);
+                if(ans10=='a' || 'A'){
+                    printf("Correct Answer !\n");
                     score += 4;
                 }
                 else{
-                    printf("Wrong Answer!");
+                    printf("Wrong Answer!\n");
                     score -= 1;
                 }
-            }
-            if(r ==0){
-                printf("1. Electric bulb filament is made of\n a. Copper      b. Aluminium \n c. Lead        d. Tungsten \n");
-                if(getchar()=='d' || 'D'){
-                    printf("Correct Answer !");
+           
+            
+                printf("Q. Ribosomes are sites for\n a. Protein Synthesis     b.Photosynthesis\n c.Fat Synthesis        d. Respiration\n");
+                scanf("%c", ans11);
+                if(ans11 =='a' || 'A'){
+                    printf("Correct Answer !\n");
                     score += 4;
                 }
                 else{
-                    printf("Wrong Answer!");
+                    printf("Wrong Answer!\n");
                     score -= 1;
                 }
-            }
-            if(r ==0){
-                printf("1. Electric bulb filament is made of\n a. Copper      b. Aluminium \n c. Lead        d. Tungsten \n");
-                if(getchar()=='d' || 'D'){
-                    printf("Correct Answer !");
-                    score += 4;
-                }
-                else{
-                    printf("Wrong Answer!");
-                    score -= 1;
-                }
-            }
-            if(r ==0){
-                printf("1. Electric bulb filament is made of\n a. Copper      b. Aluminium \n c. Lead        d. Tungsten \n");
-                if(getchar()=='d' || 'D'){
-                    printf("Correct Answer !");
-                    score += 4;
-                }
-                else{
-                    printf("Wrong Answer!");
-                    score -= 1;
-                }
-            }
-            if(r ==0){
-                printf("1. Electric bulb filament is made of\n a. Copper      b. Aluminium \n c. Lead        d. Tungsten \n");
-                if(getchar()=='d' || 'D'){
-                    printf("Correct Answer !");
-                    score += 4;
-                }
-                else{
-                    printf("Wrong Answer!");
-                    score -= 1;
-                }
-            }
-            if(r ==0){
-                printf("1. Electric bulb filament is made of\n a. Copper      b. Aluminium \n c. Lead        d. Tungsten \n");
-                if(getchar()=='d' || 'D'){
-                    printf("Correct Answer !");
-                    score += 4;
-                }
-                else{
-                    printf("Wrong Answer!");
-                    score -= 1;
-                }
-            }
-        }
+            
+            // else if(r == 11){
+            //     printf("Q. Which of the following organism breathes from skin?\n a. Snake      b. Earthworm \n c. Monkey        d. Humans \n");
+            //     scanf("%c", ans12);
+            //     if(ans12=='b' || 'B'){
+            //         printf("Correct Answer !\n");
+            //         score += 4;
+            //     }
+            //     else{
+            //         printf("Wrong Answer!\n");
+            //         score -= 1;
+            //     }
+            // }
+            // else if(r ==12){
+            //     printf("Q. Which of the following animals does not have gills?\n a. Octopus     b.Squid \n c.Clown Fish        d. Whale \n");
+            //     scanf("%c", ans13);
+            //     if(ans13=='d' || 'D'){
+            //         printf("Correct Answer !\n");
+            //         score += 4;
+            //     }
+            //     else{
+            //         printf("Wrong Answer!\n");
+            //         score -= 1;
+            //     }
+            // }
+            // else if(r ==13){
+            //     printf("Q. The value of 1 Angstrom is _________ (in micron)\n a. 10^-4 micron      b.  10^-6 micron \n c.10^-10 micron      d.  10^-2 micron\n");
+            //     scanf("%c", ans14);
+            //     if(ans14=='a' || 'A'){
+            //         printf("Correct Answer !\n");
+            //         score += 4;
+            //     }
+            //     else{
+            //         printf("Wrong Answer!\n");
+            //         score -= 1;
+            //     }
+            // }
+            // else if(r ==14){
+            //     printf("Q. At which point of the Earth is there no gravity?\n a. At North and South Pole      b. At Equator  \n c. On the ocean surface        d. At center of the earth\n");
+            //     scanf("%c", ans15);
+            //     if(ans15=='d' || 'D'){
+            //         printf("Correct Answer !\n");
+            //         score += 4;
+            //     }
+            //     else{
+            //         printf("Wrong Answer!\n");
+            //         score -= 1;
+            //     }
+            // }
+
+            // getchar();
+        printf("Your score is %d\n",score);
         break;
     case 2:
         printf("You have choosen Maths !");
