@@ -14,15 +14,16 @@ struct ques
     typedef struct ques question;
 
   void Science(){
-  char a[30];      //final
+  char a[30] = {'d', 'b', 'b', 'b', 'a', 'a', 'a', 'c', 'a', 'a'};   
+  char s[5];   //final
     int score=0;
     
     question q1={"1. Electric bulb filament is made of","a. Copper","b. Aluminium","c. Lead","d.Tungsten","d.Tungsten"};
     printf("%s\n%s \t %s\n%s \t %s\n", q1.ques,q1.opt1,q1.opt2,q1.opt3,q1.opt4);
     printf("Enter your choice: ");
-    scanf("%c", &a[0]); getchar();
+    scanf("%s", s); getchar();
     
-    if(a[0]=='d'||a[0]=='D'){
+    if(s[0]==a[0]){
         printf("correct answer!!");
         printf("\nyour score is:%d", ++score);
     }
@@ -252,15 +253,16 @@ struct ques
   }
 
   void GK(){
-  char a[30];      //final
+  char a[30] = {'a', 'a', 'b', 'b', 'd', 'b', 'a', 'a', 'a', 'b'};    
+  char s[5];  //final
     int score=0;
     
-    question q1={"1. Electric bulb filament is made of","a. Copper","b. Aluminium","c. Lead","d.Tungsten","d.Tungsten"};
+    question q1={"1.Grand Central Terminal, Park Avenue, New York is the world's","a. largest railway station","b. highest railway station","c.longest railway station","d.None of the above"};
     printf("%s\n%s \t %s\n%s \t %s\n", q1.ques,q1.opt1,q1.opt2,q1.opt3,q1.opt4);
     printf("Enter your choice: ");
-    scanf("%c", &a[0]); getchar();
+    scanf("%s", s); getchar();
     
-    if(a[0]=='d'||a[0]=='D'){
+    if(s[0]==a[0]){
         printf("correct answer!!");
         printf("\nyour score is:%d", ++score);
     }
@@ -269,18 +271,18 @@ struct ques
     printf("\nyour score is:%d", score);
     }
 
-    question q2={"\n2. Which of the following is a non metal that remains liquid at room temperature?","a. Phosphorus","b. Bromine","c. Chlorine","d.Helium"};
+    question q2={"\n2.First Afghan War took place in","a.1839","b.1843","c. 1833","d.1848"};
     printf("%s\n%s \t %s\n%s \t %s\n", q2.ques,q2.opt1,q2.opt2,q2.opt3,q2.opt4);
     printf("Enter your choice: ");
     scanf("%c", &a[1]); getchar();
-    if(a[1]=='b'||a[1]=='B'){
+    if(a[1]=='a'||a[1]=='A'){
         printf("correct answer!!");
         score++;
     }
     else printf("wrong answer!");
     printf("\nyour score is:%d", score);
 
-    question q3={"\n3. Chlorophyll is a naturally occuring chelate compound in which center metal atom is","a. Copper","b.Magnesium","c. Iron","d.Calcium"};
+    question q3={"\n3. Eritrea, which became the 182nd member of the UN in 1993, is in the continent of","a.Asia","b.Africa","c. Europe","d.Australia"};
     printf("%s\n%s \t %s\n%s \t %s\n", q3.ques,q3.opt1,q3.opt2,q3.opt3,q3.opt4);
     printf("Enter your choice: ");
     scanf("%c", &a[2]); getchar();
@@ -291,7 +293,7 @@ struct ques
     else printf("wrong answer!");
     printf("\nyour score is:%d", score);
 
-    question q4={"\n4.Brass gets discoloured in air because of the presence of which of the following gases in air?","a.Oxygen ","b. Hydrogen sulphide","c.  Carbon dioxide","d.Nitrogen"};
+    question q4={"\n4.Garampani sanctuary is located at","a. Junagarh, Gujarat","b. Diphu, Assam","c. Kohima, Nagaland","d. Gangtok, Sikkim"};
     printf("%s\n%s \t %s\n%s \t %s\n", q4.ques,q4.opt1,q4.opt2,q4.opt3,q4.opt4);
     printf("Enter your choice: ");
     scanf("%c", &a[3]); getchar();
@@ -302,29 +304,29 @@ struct ques
     else printf("wrong answer!");
     printf("\nyour score is:%d", score);
 
-    question q5={"\n5.Which among the following Vitamin is added to the milk in some countries as it is lost during the process of Fat Removal (Skimming)?","a.Vitamin A ","b. Vitamin B","c. Vitamin C","d.Vitamin D"};
+    question q5={"\n5.For which of the following disciplines is Nobel Prize awarded?","a.Physics and Chemistry","b. Physiology or Medicine","c. Literature, Peace and Economics","d.All of the above"};
     printf("%s\n%s \t %s\n%s \t %s\n", q5.ques,q5.opt1,q5.opt2,q5.opt3,q5.opt4);
     printf("Enter your choice: ");
     scanf("%c", &a[4]); getchar();
-    if(a[4]=='a'||a[4]=='A'){
+    if(a[4]=='d'||a[4]=='D'){
         printf("correct answer!!");
         score++;
     }
     else printf("wrong answer!");
     printf("\nyour score is:%d", score);
 
-    question q6={"\n6.  Which of the following algae is used to make iodine?","a. Macrocystis","b.Surgassum","c.Synechococcus","d.Anabina"};
+    question q6={"\n6. Hitler party which came into power in 1933 is known as","a.Labour Party","b.Nazi Party","c. Ku-Klux-Klan","d.Democratic Party"};
     printf("%s\n%s \t %s\n%s \t %s\n", q6.ques,q6.opt1,q6.opt2,q6.opt3,q6.opt4);
     printf("Enter your choice: ");
     scanf("%c", &a[5]); getchar();
-    if(a[5]=='a'||a[5]=='A'){
+    if(a[5]=='b'||a[5]=='B'){
         printf("correct answer!!");
         score++;
     }
     else printf("wrong answer!");
     printf("\nyour score is:%d", score);
 
-    question q7={"\n7.What is another name for cyanobacteria?","a.Blue-green algae","b.Protists","c.Golden algae","d.Slime moulds"};
+    question q7={"\n7.Fastest shorthand writer was","a. Dr. G. D. Bist","b. J.R.D. Tata","c. J.M. Tagore","d. Khudada Khan"};
     printf("%s\n%s \t %s\n%s \t %s\n", q7.ques,q7.opt1,q7.opt2,q7.opt3,q7.opt4);
     printf("Enter your choice: ");
     scanf("%c", &a[6]); getchar();
@@ -335,18 +337,18 @@ struct ques
     else printf("wrong answer!");
     printf("\nyour score is:%d", score); 
 
-    question q8={"\n8. The Alkali metals are called good reducing agents. This implies that__:","a.They easily capture electrons","b.They are not stable at room temperature","c.They easily lose electrons","d.They don't act with dilute acids"};
+    question q8={"\n8. First human heart transplant operation conducted by Dr. Christiaan Barnard on Louis Washkansky, was conducted in","a.1967","b.1968","c.1958","d.1922"};
     printf("%s\n%s \t %s\n%s \t %s\n", q8.ques,q8.opt1,q8.opt2,q8.opt3,q8.opt4);
     printf("Enter your choice: ");
     scanf("%c", &a[7]); getchar();
-    if(a[7]=='c'||a[7]=='C'){
+    if(a[7]=='a'||a[7]=='A'){
         printf("correct answer!!");
         score++;
     }
     else printf("wrong answer!");
     printf("\nyour score is:%d", score);  
 
-    question q9={"\n9.A passenger in a moving bus is thrown forward when the bus suddenly stops. This is explained","a.By Newton's first Law","b.By Newton's Second Law","c.By Newton's Third Law","d.By the principle of conservation of momentum"};
+    question q9={"\n9.Logarithm tables were invented by","a.John Napier","b.John Doe","c.John Harrison","d.John Douglas"};
     printf("%s\n%s \t %s\n%s \t %s\n", q9.ques,q9.opt1,q9.opt2,q9.opt3,q9.opt4);
     printf("Enter your choice: ");
     scanf("%c", &a[8]); getchar();
@@ -358,11 +360,11 @@ struct ques
     printf("\nyour score is:%d", score);  
 
 
-    question q10={"\n10. Ribosomes are sites for","a.Protein Synthesis","b.Photosynthesis","c.Fat Synthesis","d.Respiration "};
+    question q10={"\n10.Golf player Vijay Singh belongs to which country?","a.USA","b.Fiji","c.India","d. UK "};
     printf("%s\n%s \t %s\n%s \t %s\n", q10.ques,q10.opt1,q10.opt2,q10.opt3,q10.opt4);
     printf("Enter your choice: ");
     scanf("%c", &a[9]); getchar();
-    if(a[9]=='a'||a[9]=='A'){
+    if(a[9]=='b'||a[9]=='B'){
         printf("correct answer!!");
         score++;
     }
@@ -625,7 +627,6 @@ struct ques
 
 int main()
 {
-    Science();
     printf("******************************************************************************************************\n");
     printf("*****************************************Welcome to Quiz**********************************************\n");
     // Instruction for player to understand game.
@@ -650,6 +651,32 @@ int main()
     int choice;
     printf("Enter your choice: ");
     scanf("%d", &choice);
+    switch (choice)
+    {
+    case 1:
+     Science();
+     break;
+    
+    case 2:
+     Maths();
+     break;
+    
+    case 3:
+     GK();
+     break;
+    
+    case 4:
+     Sports();
+     break;
+    
+    case 5:
+     Tech();
+     break;
+
+    default:
+        printf("Enter valid choice !");
+        break;
+    }
     
     
 
