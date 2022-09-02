@@ -134,15 +134,16 @@ struct ques
   }
 
   void Maths(){
-  char a[30];      //final
+  char a[30] = {'a', 'a', 'b', 'b', 'a', 'a', 'a', 'c', 'a', 'a'}; 
+  char s[5];     //final
     int score=0;
     
-    question q1={"1. Electric bulb filament is made of","a. Copper","b. Aluminium","c. Lead","d.Tungsten","d.Tungsten"};
+    question q1={"1. 121 Divided by 11 is ","a.11","b. 10","c.9","d.8"};
     printf("%s\n%s \t %s\n%s \t %s\n", q1.ques,q1.opt1,q1.opt2,q1.opt3,q1.opt4);
     printf("Enter your choice: ");
-    scanf("%c", &a[0]); getchar();
+    scanf("%s", s); getchar();
     
-    if(a[0]=='d'||a[0]=='D'){
+    if(s[0] == a[0]){
         printf("correct answer!!");
         printf("\nyour score is:%d", ++score);
     }
@@ -151,18 +152,18 @@ struct ques
     printf("\nyour score is:%d", score);
     }
 
-    question q2={"\n2. Which of the following is a non metal that remains liquid at room temperature?","a. Phosphorus","b. Bromine","c. Chlorine","d.Helium"};
+    question q2={"\n2.  60 Times of 8 Equals to","a. 480","b. 300","c. 250","d.400"};
     printf("%s\n%s \t %s\n%s \t %s\n", q2.ques,q2.opt1,q2.opt2,q2.opt3,q2.opt4);
     printf("Enter your choice: ");
     scanf("%c", &a[1]); getchar();
-    if(a[1]=='b'||a[1]=='B'){
+    if(a[1]=='a'||a[1]=='A'){
         printf("correct answer!!");
         score++;
     }
     else printf("wrong answer!");
     printf("\nyour score is:%d", score);
 
-    question q3={"\n3. Chlorophyll is a naturally occuring chelate compound in which center metal atom is","a. Copper","b.Magnesium","c. Iron","d.Calcium"};
+    question q3={"\n3. Find the Missing Term in Multiples of 6 : 6, 12, 18, 24, _, 36, 42, _ 54, 60.","a. 32, 45","b. 30, 48","c. 24, 40","d.25, 49"};
     printf("%s\n%s \t %s\n%s \t %s\n", q3.ques,q3.opt1,q3.opt2,q3.opt3,q3.opt4);
     printf("Enter your choice: ");
     scanf("%c", &a[2]); getchar();
@@ -173,7 +174,7 @@ struct ques
     else printf("wrong answer!");
     printf("\nyour score is:%d", score);
 
-    question q4={"\n4.Brass gets discoloured in air because of the presence of which of the following gases in air?","a.Oxygen ","b. Hydrogen sulphide","c.  Carbon dioxide","d.Nitrogen"};
+    question q4={"\n4.What is the Next Prime Number after 7 ?","a. 13 ","b. 11","c. 14","d. 12"};
     printf("%s\n%s \t %s\n%s \t %s\n", q4.ques,q4.opt1,q4.opt2,q4.opt3,q4.opt4);
     printf("Enter your choice: ");
     scanf("%c", &a[3]); getchar();
@@ -184,7 +185,7 @@ struct ques
     else printf("wrong answer!");
     printf("\nyour score is:%d", score);
 
-    question q5={"\n5.Which among the following Vitamin is added to the milk in some countries as it is lost during the process of Fat Removal (Skimming)?","a.Vitamin A ","b. Vitamin B","c. Vitamin C","d.Vitamin D"};
+    question q5={"\n5 The Product of 131 x 0 x 300 x 4","a. 0 ","b. 46","c. 45","d. 11"};
     printf("%s\n%s \t %s\n%s \t %s\n", q5.ques,q5.opt1,q5.opt2,q5.opt3,q5.opt4);
     printf("Enter your choice: ");
     scanf("%c", &a[4]); getchar();
@@ -195,7 +196,7 @@ struct ques
     else printf("wrong answer!");
     printf("\nyour score is:%d", score);
 
-    question q6={"\n6.  Which of the following algae is used to make iodine?","a. Macrocystis","b.Surgassum","c.Synechococcus","d.Anabina"};
+    question q6={"\n6. 23 + 3 ÷ 3","a. 24","b. 23","c. 25","d. 26"};
     printf("%s\n%s \t %s\n%s \t %s\n", q6.ques,q6.opt1,q6.opt2,q6.opt3,q6.opt4);
     printf("Enter your choice: ");
     scanf("%c", &a[5]); getchar();
@@ -206,7 +207,7 @@ struct ques
     else printf("wrong answer!");
     printf("\nyour score is:%d", score);
 
-    question q7={"\n7.What is another name for cyanobacteria?","a.Blue-green algae","b.Protists","c.Golden algae","d.Slime moulds"};
+    question q7={"\n7. What is 6% Equals to","a. 0.06","b. 0.6","c. 0.0006","d. 6"};
     printf("%s\n%s \t %s\n%s \t %s\n", q7.ques,q7.opt1,q7.opt2,q7.opt3,q7.opt4);
     printf("Enter your choice: ");
     scanf("%c", &a[6]); getchar();
@@ -217,7 +218,7 @@ struct ques
     else printf("wrong answer!");
     printf("\nyour score is:%d", score); 
 
-    question q8={"\n8. The Alkali metals are called good reducing agents. This implies that__:","a.They easily capture electrons","b.They are not stable at room temperature","c.They easily lose electrons","d.They don't act with dilute acids"};
+    question q8={"\n8. How Many Years are there in a Decade?","a.5","b. 14","c. 10","d. 12"};
     printf("%s\n%s \t %s\n%s \t %s\n", q8.ques,q8.opt1,q8.opt2,q8.opt3,q8.opt4);
     printf("Enter your choice: ");
     scanf("%c", &a[7]); getchar();
@@ -228,7 +229,7 @@ struct ques
     else printf("wrong answer!");
     printf("\nyour score is:%d", score);  
 
-    question q9={"\n9.A passenger in a moving bus is thrown forward when the bus suddenly stops. This is explained","a.By Newton's first Law","b.By Newton's Second Law","c.By Newton's Third Law","d.By the principle of conservation of momentum"};
+    question q9={"\n9. How Many Months Have 120 Days?","a. 4","b. 40","c.6","d. 2"};
     printf("%s\n%s \t %s\n%s \t %s\n", q9.ques,q9.opt1,q9.opt2,q9.opt3,q9.opt4);
     printf("Enter your choice: ");
     scanf("%c", &a[8]); getchar();
@@ -240,7 +241,7 @@ struct ques
     printf("\nyour score is:%d", score);  
 
 
-    question q10={"\n10. Ribosomes are sites for","a.Protein Synthesis","b.Photosynthesis","c.Fat Synthesis","d.Respiration "};
+    question q10={"\n10. How Many Sides are there in a Decagon?","a. 10","b. 12","c. 8","d. 9"};
     printf("%s\n%s \t %s\n%s \t %s\n", q10.ques,q10.opt1,q10.opt2,q10.opt3,q10.opt4);
     printf("Enter your choice: ");
     scanf("%c", &a[9]); getchar();
@@ -493,15 +494,16 @@ struct ques
   }
 
   void Tech(){
-  char a[30];      //final
+  char a[30] = {'b', 'b', 'b', 'b', 'a', 'a', 'a', 'c', 'a', 'a'};
+  char s[5];      //final
     int score=0;
     
-    question q1={"1. Electric bulb filament is made of","a. Copper","b. Aluminium","c. Lead","d.Tungsten","d.Tungsten"};
+    question q1={"1. '.MOV' extension refers usually to what kind of file? ","a.Image file","b. Animation/movie file","c. Audio file", "d.MS Office document"};
     printf("%s\n%s \t %s\n%s \t %s\n", q1.ques,q1.opt1,q1.opt2,q1.opt3,q1.opt4);
     printf("Enter your choice: ");
-    scanf("%c", &a[0]); getchar();
+    scanf("%s", s); getchar();
     
-    if(a[0]=='d'||a[0]=='D'){
+    if(s[0] == a[0]){
         printf("correct answer!!");
         printf("\nyour score is:%d", ++score);
     }
@@ -510,7 +512,7 @@ struct ques
     printf("\nyour score is:%d", score);
     }
 
-    question q2={"\n2. Which of the following is a non metal that remains liquid at room temperature?","a. Phosphorus","b. Bromine","c. Chlorine","d.Helium"};
+    question q2={"\n2. 'OS' computer abbreviation usually means ? ","a. Order of Significance","b. Operating System","c. Open Software","d. Optical Sensor"};
     printf("%s\n%s \t %s\n%s \t %s\n", q2.ques,q2.opt1,q2.opt2,q2.opt3,q2.opt4);
     printf("Enter your choice: ");
     scanf("%c", &a[1]); getchar();
@@ -521,7 +523,7 @@ struct ques
     else printf("wrong answer!");
     printf("\nyour score is:%d", score);
 
-    question q3={"\n3. Chlorophyll is a naturally occuring chelate compound in which center metal atom is","a. Copper","b.Magnesium","c. Iron","d.Calcium"};
+    question q3={"\n3. What is part of a database that holds only one type of information? ","a. Report","b. Field","c. Record","d. File"};
     printf("%s\n%s \t %s\n%s \t %s\n", q3.ques,q3.opt1,q3.opt2,q3.opt3,q3.opt4);
     printf("Enter your choice: ");
     scanf("%c", &a[2]); getchar();
@@ -532,7 +534,7 @@ struct ques
     else printf("wrong answer!");
     printf("\nyour score is:%d", score);
 
-    question q4={"\n4.Brass gets discoloured in air because of the presence of which of the following gases in air?","a.Oxygen ","b. Hydrogen sulphide","c.  Carbon dioxide","d.Nitrogen"};
+    question q4={"\n4. How many bits is a byte?","a. 4 ","b. 8","c. 10","d. 15"};
     printf("%s\n%s \t %s\n%s \t %s\n", q4.ques,q4.opt1,q4.opt2,q4.opt3,q4.opt4);
     printf("Enter your choice: ");
     scanf("%c", &a[3]); getchar();
@@ -543,7 +545,7 @@ struct ques
     else printf("wrong answer!");
     printf("\nyour score is:%d", score);
 
-    question q5={"\n5.Which among the following Vitamin is added to the milk in some countries as it is lost during the process of Fat Removal (Skimming)?","a.Vitamin A ","b. Vitamin B","c. Vitamin C","d.Vitamin D"};
+    question q5={"\n5. Changing computer language of 1's and 0's to characters that a person can understand is","a. Decode ","b. Highlight","c. Clip art","d. Execute"};
     printf("%s\n%s \t %s\n%s \t %s\n", q5.ques,q5.opt1,q5.opt2,q5.opt3,q5.opt4);
     printf("Enter your choice: ");
     scanf("%c", &a[4]); getchar();
@@ -554,7 +556,7 @@ struct ques
     else printf("wrong answer!");
     printf("\nyour score is:%d", score);
 
-    question q6={"\n6.  Which of the following algae is used to make iodine?","a. Macrocystis","b.Surgassum","c.Synechococcus","d.Anabina"};
+    question q6={"\n6. http://www.indiabix.com - is an example of what?","a. A URL","b. An access code","c. A directory","d. A server"};
     printf("%s\n%s \t %s\n%s \t %s\n", q6.ques,q6.opt1,q6.opt2,q6.opt3,q6.opt4);
     printf("Enter your choice: ");
     scanf("%c", &a[5]); getchar();
@@ -565,7 +567,7 @@ struct ques
     else printf("wrong answer!");
     printf("\nyour score is:%d", score);
 
-    question q7={"\n7.What is another name for cyanobacteria?","a.Blue-green algae","b.Protists","c.Golden algae","d.Slime moulds"};
+    question q7={"\n7.The desktop of a computer refers to:","a.The visible screen","b.The area around the monitor","c.The top of the mouse pad","d.The inside of a folder"};
     printf("%s\n%s \t %s\n%s \t %s\n", q7.ques,q7.opt1,q7.opt2,q7.opt3,q7.opt4);
     printf("Enter your choice: ");
     scanf("%c", &a[6]); getchar();
@@ -576,7 +578,7 @@ struct ques
     else printf("wrong answer!");
     printf("\nyour score is:%d", score); 
 
-    question q8={"\n8. The Alkali metals are called good reducing agents. This implies that__:","a.They easily capture electrons","b.They are not stable at room temperature","c.They easily lose electrons","d.They don't act with dilute acids"};
+    question q8={"\n8.Which of these is a search engine?","a.ARPANET","b. Archie","c.Google","d.FTP"};
     printf("%s\n%s \t %s\n%s \t %s\n", q8.ques,q8.opt1,q8.opt2,q8.opt3,q8.opt4);
     printf("Enter your choice: ");
     scanf("%c", &a[7]); getchar();
@@ -587,7 +589,7 @@ struct ques
     else printf("wrong answer!");
     printf("\nyour score is:%d", score);  
 
-    question q9={"\n9.A passenger in a moving bus is thrown forward when the bus suddenly stops. This is explained","a.By Newton's first Law","b.By Newton's Second Law","c.By Newton's Third Law","d.By the principle of conservation of momentum"};
+    question q9={"\n9. The letters, 'DOS' stand for...","a. Disk Operating System","b. Data Out System","c.Disk Out System","d.Data Operating System"};
     printf("%s\n%s \t %s\n%s \t %s\n", q9.ques,q9.opt1,q9.opt2,q9.opt3,q9.opt4);
     printf("Enter your choice: ");
     scanf("%c", &a[8]); getchar();
@@ -599,7 +601,7 @@ struct ques
     printf("\nyour score is:%d", score);  
 
 
-    question q10={"\n10. Ribosomes are sites for","a.Protein Synthesis","b.Photosynthesis","c.Fat Synthesis","d.Respiration "};
+    question q10={"\n10. ROM stands for_________","a.Random Access Memory","b.Read Access Memory","c.Read A Manual","d.Real Absolute Memory"};
     printf("%s\n%s \t %s\n%s \t %s\n", q10.ques,q10.opt1,q10.opt2,q10.opt3,q10.opt4);
     printf("Enter your choice: ");
     scanf("%c", &a[9]); getchar();
