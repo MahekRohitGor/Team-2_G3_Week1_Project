@@ -636,13 +636,17 @@ int main()
     printf("Here are the instructions to play this Quiz Game: \n");
     printf("1. Game will consist of 10 questions in total and will be in MCQ type.\n");
     printf("2. You can choose your topic of interest and play Quiz Game.\n");
-    printf("3. For each correct answer you will get +4 and for every incorrect answer you will get -1. \n");
-    printf("4. Once the game is over, your score will be displayed and if you are in top 5 then your name will be displayed in leaderboard.\n");
+    printf("3. For each correct answer you will get +1 and for every incorrect answer you will get 0. \n");
+    //printf("4. Once the game is over, your score will be displayed and if you are in top 5 then your name will be displayed in leaderboard.\n");
     printf("All the Best ! and Let's start the game \n");
+    printf("\n");
+    printf("\n");
     printf("Enter your Name: ");
+    printf("\n");
     char name[50];
     gets(name);
     printf("Welcome %s to Quiz Game", name);
+    printf("\n");
     printf("\n");
     // Giving player a choice of their topic 
     printf("Below are some of the topics for Quiz Game, You can choose your topic by pressing the respective number as given below: \n");
@@ -654,6 +658,7 @@ int main()
     int choice;
     printf("Enter your choice: ");
     scanf("%d", &choice);
+    printf("\n");
     switch (choice)
     {
     case 1:
